@@ -1,0 +1,269 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  color: #000000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 38px; /* NOTICEABLY larger base font */
+}
+
+
+/* Fixed-width centered layout (classic) */
+.container {
+  max-width: 760px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0 16px; /* breathing room on mobile */
+}
+
+
+/* Top bar */
+.topbar {
+  border-bottom: 2px solid #000;
+  padding: 18px 0;
+}
+
+.site-title {
+  font-size: 120px; /* Bigger name */
+}
+
+
+/* Simple nav */
+.nav {
+  font-size: 13px;
+}
+
+.nav a {
+  color: #0000ee;           /* classic link blue */
+  text-decoration: underline;
+}
+
+.nav a:visited {
+  color: #551a8b;           /* classic visited purple */
+}
+
+/* Content */
+.content {
+  padding: 18px 0 40px;
+}
+
+.intro {
+  margin-top: 14px;
+}
+
+/* Section headings */
+h2 {
+  font-size: 24px;
+}
+
+/* HR like old sites */
+hr {
+  border: none;
+  border-top: 1px solid #000;
+  margin: 22px 0;
+}
+
+/* Under construction badge */
+.badge-row {
+  margin-top: 14px;
+}
+
+.badge {
+  display: inline-block;
+  border: 1px solid #000;
+  padding: 6px 10px;
+  font-weight: bold;
+  font-size: 12px;
+  background: #ffffcc; /* pale yellow */
+}
+
+/* Center list */
+.center-list {
+  list-style-position: inside;
+  padding: 0;
+  margin: 0;
+}
+
+/* Footer box like an old “site info” section */
+.footer-box {
+  margin: 28px auto 0;
+  padding: 12px 10px;
+  width: 520px;
+  border: 1px solid #000;
+}
+
+.footer-line {
+  margin: 6px 0;
+  font-size: 12px;
+}
+
+/* Fake hit counter styling */
+.counter {
+  display: inline-flex;
+  gap: 2px;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.digit {
+  display: inline-block;
+  width: 16px;
+  height: 20px;
+  line-height: 20px;
+  border: 1px solid #000;
+  background: #eaeaea;
+  font-family: "Courier New", Courier, monospace; /* old counter look */
+  font-size: 13px;
+}
+/* Bio under title */
+
+
+
+/* Links under bio */
+.links-row {
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.links-row a {
+  color: #0000ee;
+  text-decoration: underline;
+}
+
+.links-row a:visited {
+  color: #551a8b;
+}
+
+/* Two videos side-by-side */
+.video-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.yt {
+  width: 360px;
+  height: 203px; /* 16:9 ratio */
+  border: 1px solid #000;
+}
+
+/* Image placeholders (until you have real photos) */
+.img-placeholder {
+  width: 520px;
+  height: 260px;
+  margin: 18px auto;
+  border: 2px dashed #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 12px;
+  background: #f5f5f5;
+}
+
+/* Mobile: stack videos */
+@media (max-width: 800px) {
+  .container { width: 92%; }
+  .bio { width: 100%; }
+
+  .image-strip {
+    flex-wrap: wrap; /* allows wrapping */
+    justify-content: center;
+  }
+
+  .image-strip img {
+    width: 60px;
+    height: 60px;
+  }
+
+  body {
+    font-size: 20px; /* much better for phones */
+  }
+
+  .site-title {
+    font-size: 56px; /* instead of 120px */
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .video-row {
+    flex-direction: column;
+  }
+
+  .yt {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+  }
+
+  .img-placeholder {
+    width: 100%;
+    height: 220px;
+  }
+}
+.links-vertical {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.links-vertical li {
+  margin: 8px 0;
+}
+
+.links-vertical a {
+  font-size: 20px;
+  color: #0000ee;
+  text-decoration: underline;
+}
+
+.links-vertical a:visited {
+  color: #551a8b;
+}
+.bio-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin: 24px auto;
+}
+
+/* Lock bio width so it NEVER shrinks */
+.bio {
+  width: 520px;
+  flex-shrink: 0; /* ⭐ KEY LINE */
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Allow images to grow without affecting bio */
+.bio-img {
+  width: 220px; /* make these as big as you want */
+  height: auto;
+  flex-shrink: 0;
+}
+
+@media (max-width: 800px) {
+  .bio-wrap { flex-direction: column; }
+  .bio-img { width: 140px; }
+  .bio { width: 100%; }
+}
+/* Small 2000s-style image strip */
+.image-strip {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin: 14px 0 6px;
+}
+
+.image-strip img {
+  width: 150px;        /* small images */
+  height: 150px;
+  object-fit: cover;
+  border: 1px solid #000; /* classic border */
+}
