@@ -4,72 +4,52 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CamBeezy</title>
-    <meta name="description" content="Cambeezy — independent artist. IND to ATL." />
+    <meta name="description" content="Cambeezy — official page." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
 
   <body>
-    <div class="topbar">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">CamBeezy</a>
+        <nav class="nav">
+          <a href="index.html" aria-current="page">Home</a>
+          <a href="music.html">Music</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
       <div class="container">
-        <div class="site-title">CamBeezy</div>
+        <h1 class="site-title">CamBeezy</h1>
+        <p class="tagline">// INDEPENDENT ARTIST + CREATOR — IND to ATL //</p>
+        <svg class="scribble" viewBox="0 0 200 40" fill="none">
+          <path d="M2 20 Q20 2 40 20 T80 20 T120 20 T160 20 T198 20" stroke="#4E9A2F" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </section>
 
-        <!-- Bio with images on both sides -->
-        <div class="bio-wrap">
-          <img
-            src="assets/img/bz2.png"
-            alt="Cambeezy logo"
-            class="bio-img"
-          />
-
-          <p class="bio">
-            Cambeezy is an independent artist and creator. IND to ATL.
-          
-          </p>
-        </div>
-
+    <section class="links">
+      <div class="container">
+        <p class="eyebrow">find cam</p>
         <ul class="links-vertical">
-          <li>
-            <a href="https://open.spotify.com/artist/3phIz6oDdkQlpb9kdahV9F" target="_blank" rel="noreferrer"
-              >Spotify</a
-            >
-          </li>
-          <li>
-            <a href="https://www.youtube.com/@Cambeezy" target="_blank" rel="noreferrer">YouTube</a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/cambeezy_/" target="_blank" rel="noreferrer">Instagram</a>
-          </li>
-          <li>
-            <a href="https://www.tiktok.com/@bz2sturdy" target="_blank" rel="noreferrer">Tiktok</a>
-          </li>
-          <li>
-            <a href="https://soundcloud.com/user-559638006" target="_blank" rel="noreferrer">SoundCloud</a>
-          </li>
-          <li>
-            <a href="https://direct.distrokid.com/cambeezy2/home" target="_blank" rel="noreferrer">Merch Store</a>
-          </li>
+          <li><a href="https://open.spotify.com/artist/3phIz6oDdkQlpb9kdahV9F" target="_blank" rel="noreferrer">Spotify</a></li>
+          <li><a href="https://www.youtube.com/@Cambeezy" target="_blank" rel="noreferrer">YouTube</a></li>
+          <li><a href="https://www.instagram.com/cambeezy_/" target="_blank" rel="noreferrer">Instagram</a></li>
+          <li><a href="https://www.tiktok.com/@bz2sturdy" target="_blank" rel="noreferrer">TikTok</a></li>
+          <li><a href="https://soundcloud.com/user-559638006" target="_blank" rel="noreferrer">SoundCloud</a></li>
+          <li><a href="https://direct.distrokid.com/cambeezy2/home" target="_blank" rel="noreferrer">Merch Store</a></li>
           <li><a href="mailto:cambeezybeats@gmail.com">Booking / Contact</a></li>
         </ul>
-
-        <!-- Small image strip (7 images side by side) -->
-        <div class="image-strip">
-          <img src="assets/img/bz3.png" alt="placeholder 1" />
-          <img src="assets/img/bz6.png" alt="placeholder 2" />
-          <img src="assets/img/bz9.png" alt="placeholder 3" />
-          <img src="assets/img/bz7.png" alt="placeholder 4" />
-          <img src="assets/img/bz8.png" alt="placeholder 5" />
-          <img src="assets/img/bz5.png" alt="placeholder 6" />
-          <img src="assets/img/bz4.png" alt="placeholder 7" />
-        </div>
-
-        
       </div>
-    </div>
+    </section>
 
-    <div class="container">
-      <div class="content">
-        <!-- Two YouTube videos side-by-side -->
-        <h2 id="videos">Videos</h2>
+    <section class="videos">
+      <div class="container">
+        <p class="eyebrow">videos</p>
         <div class="video-row">
           <iframe
             class="yt"
@@ -79,7 +59,6 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
           ></iframe>
-
           <iframe
             class="yt"
             src="https://www.youtube.com/embed/hA7DPnExc0U?si=SpBdrDfFz4A4Ssf1"
@@ -89,17 +68,19 @@
             allowfullscreen
           ></iframe>
         </div>
+      </div>
+    </section>
 
-
-        <h2 id="contact">Contact</h2>
+    <section class="contact">
+      <div class="container">
+        <p class="eyebrow">contact</p>
         <p>Booking: <a href="mailto:cambeezybeats@gmail.com">cambeezybeats@gmail.com</a></p>
-
         <div class="footer-box">
-          <p class="footer-line">Last updated: <span id="lastUpdated">--</span></p>
-          <p class="footer-line">© <span id="year"></span> Cambeezy</p>
+          <p>Last updated: <span id="lastUpdated">--</span></p>
+          <p>© <span id="year"></span> Cambeezy</p>
         </div>
       </div>
-    </div>
+    </section>
 
     <script src="assets/js/main.js"></script>
   </body>
