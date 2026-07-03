@@ -5,13 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cambeezy | Music</title>
     <meta name="description" content="Music and videos from Cambeezy." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css" />
   </head>
 
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="logo" href="index.html">Cambeezy</a>
+        <a class="logo" href="index.html">CamBeezy</a>
         <nav class="nav">
           <a href="index.html">Home</a>
           <a href="music.html" aria-current="page">Music</a>
@@ -25,36 +27,50 @@
         <div class="container">
           <h1>Music</h1>
           <p class="subtext">
-            Add your latest releases, Spotify embeds, and YouTube videos here.
+            Latest releases, videos, and where to stream.
           </p>
 
           <div class="grid">
             <article class="card">
               <h2 class="h3">Featured Track</h2>
-              <p>Replace this with a Spotify embed or a link.</p>
-              <a class="btn primary" href="#" target="_blank" rel="noreferrer">Listen on Spotify</a>
+              <p>Check out the latest on Spotify.</p>
+              <a class="btn primary" href="https://open.spotify.com/artist/3phIz6oDdkQlpb9kdahV9F" target="_blank" rel="noreferrer">Listen on Spotify</a>
             </article>
 
             <article class="card">
               <h2 class="h3">Featured Video</h2>
-              <p>Replace this with a YouTube embed or a link.</p>
-              <a class="btn" href="#" target="_blank" rel="noreferrer">Watch on YouTube</a>
+              <p>New videos drop on YouTube.</p>
+              <a class="btn" href="https://www.youtube.com/@Cambeezy" target="_blank" rel="noreferrer">Watch on YouTube</a>
             </article>
           </div>
 
           <div class="card section-card">
-            <h2 class="h3">Embed examples (optional)</h2>
-            <p class="muted">
-              If you want embeds, paste the embed code from Spotify/YouTube here.
-              Static sites can embed iframes just fine.
-            </p>
+            <h2 class="h3">Videos</h2>
+            <div class="video-row">
+              <iframe
+                class="yt"
+                src="https://www.youtube.com/embed/VYXe_ZeL_Kw?si=pojtDPjWou3A7oSF"
+                title="Cambeezy - Luigi"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+              <iframe
+                class="yt"
+                src="https://www.youtube.com/embed/hA7DPnExc0U?si=SpBdrDfFz4A4Ssf1"
+                title="Cambeezy - Weenie Hut Jr"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-inner">
+      <div class="container">
         <p>© <span id="year"></span> Cambeezy.</p>
       </div>
     </footer>
