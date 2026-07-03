@@ -37,4 +37,3 @@ Official website for independent artist CamBeezy. A simple static site (HTML/CSS
 3. Open a pull request into `main`.
 4. Once merged, the site deploys automatically — no manual upload needed.
 
-⚠️ Because the deploy syncs with `--delete`, merging to `main` will remove any live file that's no longer present in the repo.
