@@ -16,6 +16,13 @@ data "aws_iam_policy_document" "github_actions_deploy" {
     actions   = ["s3:PutObject", "s3:DeleteObject"]
     resources = ["${aws_s3_bucket.site.arn}/*"]
   }
+
+  statement {
+    sid       = "CloudFrontInvalidate"
+    effect    = "Allow"
+    actions   = ["cloudfront:CreateInvalidation"]
+    resources = [aws_cloudfront_distribution.site.arn]
+  }
 }
 
 resource "aws_iam_policy" "github_actions_deploy" {

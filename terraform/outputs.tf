@@ -9,3 +9,11 @@ output "website_endpoint" {
 output "hosted_zone_id" {
   value = data.aws_route53_zone.cambeezy.zone_id
 }
+
+output "cloudfront_distribution_id" {
+  value = aws_cloudfront_distribution.site.id
+}
+
+output "cloudfront_domain_name" {
+  value = aws_cloudfront_distribution.site.domain_name
+}
