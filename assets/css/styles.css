@@ -170,6 +170,15 @@ a{ color:inherit; }
 }
 .scribble{ width:120px; margin:20px auto 0; display:block; }
 
+.media{ padding:10px 0 50px; text-align:center; }
+.hero-gif{
+  width:280px;
+  max-width:80vw;
+  border:2px solid var(--ink);
+  box-shadow:6px 6px 0 var(--acid);
+  transform:rotate(-1deg);
+}
+
 .links{ padding:50px 0; border-bottom:1px solid var(--line); }
 .eyebrow{
   font-family:'Permanent Marker', cursive;
